@@ -1,0 +1,570 @@
+﻿
+    .profile-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-bar {
+        display: flex;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .menu-item {
+        padding: 10px 20px;
+        border: 2px solid #1ed085;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 4px;
+        color: #1ed085;
+        font-weight: bold;
+        flex: 1;
+        text-align: center;
+    }
+
+    .menu-item.active {
+        background-color: #1ed085;
+        color: #fff;
+    }
+
+    .tabcontent {
+        display: none;
+    }
+
+    .profile-form, .password-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .column {
+        flex: 1;
+        min-width: 200px;
+    }
+    .update-btn {
+        background-color: #008080;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .status-message {
+        color: green;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .status-message i {
+        margin-right: 10px;
+    }
+
+  
+    .profile-form {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .form-column {
+        width: 48%;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .address-label {
+        display: flex;
+        align-items: center;
+    }
+
+    .checkbox-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .checkbox-group input {
+        margin-right: 10px;
+    }
+
+    .clear-link {
+        color: #007bff;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 0.9em;
+    }
+
+    .form-buttons {
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .save-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+    .save-btn:hover {
+        background-color: #0056b3;
+    }
+    .preview-img {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .education-form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: #008080;
+    color: white;
+    font-weight: bold;
+}
+
+.education-table td input,
+.education-table td select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.education-table td input[readonly] {
+    background-color: #f1f1f1;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+ .add-more-btn, .save-btn {
+        background-color: #1ed085;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .add-more-btn:hover, .save-btn:hover {
+        background-color: #1ed085;
+    }
+     .non-editable {
+        background-color: #f1f1f1;
+        pointer-events: none;
+    }
+
+    .non-editable input,
+    .non-editable select {
+        background-color: #e9ecef;
+    }
+    .profile-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    width: 25%;
+    font-weight: bold;
+}
+
+.form-row select, 
+.form-row input[type="file"] {
+    width: 70%;
+    padding: 5px;
+    margin-left:20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* File Upload Section */
+.file-upload {
+    display: flex;
+    align-items: center;
+}
+
+.file-upload input[type="file"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.file-upload .upload-btn {
+    background-color: #008080;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-upload .upload-btn i {
+    font-size: 16px;
+}
+
+.uploaded-documents 
+{
+width:400px;    
+}
+/* Uploaded Documents Table */
+.uploaded-documents table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.uploaded-documents table th, 
+.uploaded-documents table td {
+    border: 1px solid #1ed085;
+    padding: 8px;
+    text-align: center;
+}
+
+.uploaded-documents table th {
+    background-color: #1ed085;
+    color:#fff;
+    font-weight:bold;
+}
+
+.uploaded-documents .delete-icon {
+    color: red;
+    cursor: pointer;
+}
+
+.uploaded-documents .fa-download {
+    color: green;
+    cursor: pointer;
+}
+/* Payment Form Layout */
+.payment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h2 {
+    text-align: center;
+    color: #008080;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-row label {
+    width: 40%;
+    font-weight: bold;
+}
+
+.form-row input,
+.form-row select {
+    width: 55%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Specific Input Styles */
+.card-input,
+.upi-input,
+.bank-select,
+.wallet-select {
+    width: 100%;
+}
+
+#card-number,
+#card-expiry,
+#card-cvv,
+#card-name {
+    text-transform: uppercase;
+}
+
+/* Payment Sections */
+.payment-section {
+    display: none;
+}
+
+.payment-section.active {
+    display: block;
+}
+
+/* Form Buttons */
+.form-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-buttons button:hover {
+    background-color: #006666;
+}
+
+/* Status Message */
+.status-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #28a745;
+    font-size: 16px;
+}
+
+.status-message i {
+    color: #28a745;
+    margin-right: 10px;
+}
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+    padding:0px 50px;
+}
+
+.progress-step {
+    width: 40px;
+    height: 40px;
+    background-color: #1ed085; /* Base teal color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    font-weight:bold;
+    text-align: center;
+    line-height: 14px;
+    color: white;
+}
+
+.progress-step.active {
+    background-color: #1ed085; 
+    color: #fff;
+}
+
+.progress-line {
+    flex: 1;
+    height: 3px;
+    background-color: gray;
+}
+
+.progress-step.active + .progress-line {
+    background-color: #4CAF50; /* Active green color */
+}
+
+/* Label Styling */
+.progress-bar .progress-step::after {
+    content: attr(data-label); /* Display the label from HTML */
+    position: absolute;
+    top: 50px; /* Positioning the label below the circle */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    color: #333; /* Label text color */
+    white-space: nowrap;
+    text-align: center;
+}
+#PersonalData .form-group
+{
+width:400px;    
+position:relative; 
+}
+#EducationalData {
+        background-color: #f5f8fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 128, 128, 0.2);
+    }
+
+    /* Education Grid */
+    .education-grid {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    .education-grid th {
+        background-color: #1ed085;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .education-grid td {
+        padding: 10px;
+        border: 1px solid #1ed085;
+        text-align: center;
+        background-color: #e0f2f1;
+    }
+
+    /* Add More Form */
+    .education-form {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 128, 128, 0.1);
+    }
+
+    .education-form td {
+        padding: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #f7f7f7;
+        transition: border 0.3s ease;
+    }
+
+    .form-control:focus {
+        border-color: #008080;
+        outline: none;
+    }
+
+    /* Buttons */
+    .form-buttons {
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .add-more-btn{
+        background-color: #1ed085;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 12px;
+        font-weight:bold;
+        margin-right: 10px;
+    }
+
+    .add-more-btn:hover {
+        background-color: #1ed085;
+    }
+.save-btn {
+        background-color: #1ed085;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+   .save-btn:hover {
+        background-color: #1ed085;
+    }
+    
+.confirmation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding-top:100px;
+    padding-bottom:150px;
+}
+
+.confirmation-message {
+    background-color: #ffffff; /* White background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px;
+    width: 90%;
+}
+
+.confirmation-message h1 {
+    margin: 0 0 15px;
+    font-size: 1.8em;
+    color: #333; /* Darker text color for better readability */
+}
+
+.confirmation-message p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555; /* Slightly lighter text color */
+}
